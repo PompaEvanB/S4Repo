@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetMouse</title>
+    <title>PetLizard</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.60.0/phaser.js" integrity="sha512-H05oT7BAjM9Ai1IaFX9zr61NtE2e1P0MkTz3AZXBnseaJSAOt2FGMFJ+vVGutaJxEGA1jxUiYsTBYQNE08/Erw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         class Demo extends Phaser.Scene {
             create() {
-                this.meep = this.add.text(10,10,'🐁').setOrigin(0.5,0.5);
+                this.meep = this.add.text(10,10,'🦎').setOrigin(0.5,0.5);
                 this.input.setDefaultCursor('none');
                 this.input.on('pointerdown', (event) => {
                     this.tweens.add({
@@ -68,13 +68,13 @@
             width: 640,
             height: 520,
             scene: Demo,
-            backgroundColor: 0xdddddd,
+            backgroundColor: 0xDAA06D,
             parent: 'here'
         });
     </script>
 </head>
 <body>
     <div id="here"></div>
-    Drag the mouse around the screen.
+    Drag the lizard around the screen.
 </body>
 </html>
